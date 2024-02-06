@@ -45,7 +45,7 @@ public class Board {
 	@JoinColumn(name="userId")
 	private User user; // DB는 오브젝트를 저장할수 없음 / FKㅡ 자바는 오브젝트를 저장 가능
 	
-	@OneToMany(mappedBy = "board", fetch = FetchType.LAZY) // mappedBy 연관관계의 주인이 아님 (포링키아님)
+	@OneToMany(mappedBy =  "board", fetch =  FetchType.LAZY) // mappedBy 연관관계의 주인이 아님 (포링키아님)
 	private List<Reply> reply;  // Reply 테이블의 board가 포링키
 	
 	@CreationTimestamp
