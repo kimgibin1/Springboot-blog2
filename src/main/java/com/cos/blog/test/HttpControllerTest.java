@@ -20,19 +20,19 @@ public class HttpControllerTest {
 			return "lommbok test 완료";
 		}
 		
-	@GetMapping("/http/get") // 데이터 요청
+	@GetMapping("/http/get")
 	public String getTest(Member m) {
 		return "get요청" +m.getId()+","+m.getUsername()+","+m.getPassword()+","+m.getEmail();
 	}
-	@PostMapping("/http/post") // 데이터 수정
+	@PostMapping("/http/post")
 	public String postTest() {
 		return "post요청";
 	}
-	@PutMapping("/http/put") // 데이터 추가
+	@PutMapping("/http/put")
 	public String putTest() {
 		return "put요청";
 	}
-	@DeleteMapping("/http/delete") // 데이터 삭제
+	@DeleteMapping("/http/delete")
 	public String deleteTest() {
 		return "delete요청";
 	}
